@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>hira – Datenschutzerklärung / Privacy Policy / Politique de confidentialité</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --gold: #C5973A;
+      --gold-light: #F0DFA8;
+      --gold-faint: #FAF4E6;
+      --text: #1A1209;
+      --muted: #7A6E5F;
+      --border: #E8DCC8;
+      --white: #FFFFFF;
+      --bg: #FAF8F3;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ─── Header ─── */
+    header {
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      padding: 32px 24px 28px;
+      text-align: center;
+      position: relative;
+    }
+
+    header .bismillah {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 26px;
+      color: var(--gold);
+      opacity: 0.55;
+      margin-bottom: 4px;
+    }
+
+    header .app-name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 5px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-bottom: 10px;
+    }
+
+    header h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 600;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    /* ─── Language Tabs ─── */
+    .lang-tabs {
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      padding: 20px 24px;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .lang-tab {
+      padding: 8px 20px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .lang-tab.active {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: var(--white);
+    }
+
+    .lang-tab:hover:not(.active) {
+      border-color: var(--gold);
+      color: var(--gold);
+    }
+
+    /* ─── Content ─── */
+    .container {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+
+    .lang-section { display: none; }
+    .lang-section.active { display: block; }
+
+    .meta-info {
+      background: var(--gold-faint);
+      border: 1px solid var(--gold-light);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 36px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .meta-info strong { color: var(--text); }
+
+    h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: var(--text);
+      margin-top: 40px;
+      margin-bottom: 14px;
+      padding-bottom: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    h3 {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--gold);
+      margin-top: 20px;
+      margin-bottom: 8px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+      font-size: 11px;
+    }
+
+    p { margin-bottom: 12px; color: #3D3020; }
+
+    ul {
+      margin: 8px 0 16px 20px;
+      color: #3D3020;
+    }
+
+    ul li { margin-bottom: 6px; }
+
+    .data-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0;
+      font-size: 13px;
+    }
+
+    .data-table th {
+      background: var(--gold-faint);
+      color: var(--gold);
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .data-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      color: #3D3020;
+    }
+
+    .data-table tr:last-child td { border-bottom: none; }
+    .data-table tr:nth-child(even) td { background: #FDFAF5; }
+
+    .highlight-box {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--gold);
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+    }
+
+    .not-collected {
+      background: #F0FFF4;
+      border: 1px solid #BBF7D0;
+      border-radius: 8px;
+      padding: 14px 18px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #166534;
+    }
+
+    /* ─── Contact ─── */
+    .contact-card {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-top: 16px;
+    }
+
+    .contact-card p {
+      margin-bottom: 6px;
+      font-size: 14px;
+    }
+
+    /* ─── Footer ─── */
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      border-top: 1px solid var(--border);
+      font-size: 12px;
+      color: var(--muted);
+      background: var(--white);
+    }
+
+    footer .app-name-footer {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 500;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: var(--gold);
+      text-transform: uppercase;
+      display: block;
+      margin-bottom: 6px;
+    }
+
+    a { color: var(--gold); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 600px) {
+      header h1 { font-size: 22px; }
+      h2 { font-size: 19px; }
+      .data-table { font-size: 12px; }
+      .data-table th, .data-table td { padding: 8px 10px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="bismillah">بِسْمِ اللَّهِ</div>
+  <div class="app-name">hira</div>
+  <h1>Datenschutzerklärung<br>Privacy Policy<br>Politique de confidentialité</h1>
+</header>
+
+<div class="lang-tabs">
+  <button class="lang-tab active" onclick="setLang('de')">🇩🇪 Deutsch</button>
+  <button class="lang-tab" onclick="setLang('en')">🇬🇧 English</button>
+  <button class="lang-tab" onclick="setLang('fr')">🇫🇷 Français</button>
+</div>
+
+<div class="container">
+
+  <!-- ══════════════════════════════════════════ DEUTSCH ══ -->
+  <div class="lang-section active" id="lang-de">
+
+    <div class="meta-info">
+      <strong>Stand:</strong> Juni 2025 &nbsp;·&nbsp;
+      <strong>App:</strong> hira – Quran-Memorierung &nbsp;·&nbsp;
+      <strong>Version:</strong> 1.0
+    </div>
+
+    <h2>1. Verantwortlicher</h2>
+    <div class="contact-card">
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Deutschland</p>
+      <p>E-Mail: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+    <h2>2. Welche Daten wir erfassen</h2>
+
+    <h3>2.1 Cloud-Daten (Firebase / Google)</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Daten</th><th>Speicherort</th><th>Zweck</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebase UID</td><td>Firestore</td><td>Nutzeridentifikation</td></tr>
+        <tr><td>Benutzername</td><td>Firestore</td><td>Freunde-System, Profil</td></tr>
+        <tr><td>Lieblings-Sure</td><td>Firestore</td><td>Nutzerprofil</td></tr>
+        <tr><td>Lieblingsvers / Zitat</td><td>Firestore</td><td>Nutzerprofil</td></tr>
+        <tr><td>Hafiz-Status</td><td>Firestore</td><td>Nutzerprofil</td></tr>
+        <tr><td>Freundschaftsanfragen</td><td>Firestore</td><td>Freunde-System</td></tr>
+        <tr><td>Sprachpräferenz</td><td>Firestore + lokal</td><td>App-Sprache</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Standortdaten</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Daten</th><th>Empfänger</th><th>Zweck</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>GPS-Koordinaten</td><td>api.aladhan.com</td><td>Gebetszeiten, Qibla-Richtung</td></tr>
+        <tr><td>IP-Adresse (Fallback)</td><td>ipapi.co</td><td>Standort wenn GPS deaktiviert</td></tr>
+        <tr><td>Gespeicherte Moscheen</td><td>Nur lokal (UserDefaults)</td><td>Gebetszeiten der Lieblingsmoschee</td></tr>
+      </tbody>
+    </table>
+    <p>GPS-Koordinaten werden <strong>nicht dauerhaft gespeichert</strong>. Sie werden nur für die aktuelle Berechnung gesendet und danach verworfen.</p>
+
+    <h3>2.3 Mikrofon & Audioaufnahmen</h3>
+    <ul>
+      <li>Quran-Rezitationsaufnahmen werden <strong>ausschließlich lokal</strong> gespeichert (Dokumente/{uid}/)</li>
+      <li>Keine Übertragung auf Server</li>
+      <li>Teilen nur durch bewusstes Nutzeraktion (Share-Sheet)</li>
+    </ul>
+
+    <h3>2.4 Benachrichtigungen</h3>
+    <ul>
+      <li>Gebetszeit-Erinnerungen (bis zu 60 lokale Benachrichtigungen)</li>
+      <li>Wudu-Erinnerung (5 Min. vor Gebet)</li>
+      <li>Alles lokal, keine Server-Kommunikation</li>
+    </ul>
+
+    <h3>2.5 Lokal gespeicherte Daten (UserDefaults)</h3>
+    <ul>
+      <li>Abgeschlossene Verse (Lernfortschritt)</li>
+      <li>Lesezeichen (Sure, Vers)</li>
+      <li>Gebetszeiten-Cache</li>
+      <li>Stadtname, Gebetsberechnungsmethode</li>
+    </ul>
+
+    <h2>3. Externe Dienste</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Dienst</th><th>Zweck</th><th>Datenschutz</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Firebase (Google)</strong></td><td>Authentifizierung, Datenbank</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td><strong>aladhan.com</strong></td><td>Gebetszeiten-Berechnung</td><td>Koordinaten werden einmalig übertragen</td></tr>
+        <tr><td><strong>ipapi.co</strong></td><td>IP-basierter Standort (Fallback)</td><td>Nur bei deaktiviertem GPS</td></tr>
+        <tr><td><strong>cdn.islamic.network</strong></td><td>Quran-Audio streamen</td><td>Anonym, nur Vers-Nummer</td></tr>
+        <tr><td><strong>Apple CLGeocoder</strong></td><td>Adresse zu Koordinaten</td><td>Verarbeitung durch Apple</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Religiöse Daten</h2>
+    <div class="highlight-box">
+      Die App verarbeitet religiöse Daten (Hafiz-Status, Lieblingsverse, Rezitationen). Diese Daten fallen unter die besonderen Kategorien personenbezogener Daten gemäß Art. 9 DSGVO. Die Verarbeitung erfolgt ausschließlich auf Basis deiner ausdrücklichen Einwilligung, die du beim Onboarding erteilst.
+    </div>
+
+    <h2>5. Was wir NICHT erfassen</h2>
+    <div class="not-collected">
+      ✓ Keine Werbe-IDs (IDFA / IDFV)<br>
+      ✓ Kein Analytics-Tracking<br>
+      ✓ Keine E-Mail-Adresse<br>
+      ✓ Keine Zahlungsdaten<br>
+      ✓ Kein Tracking über Apps hinweg
+    </div>
+
+    <h2>6. Deine Rechte (DSGVO)</h2>
+    <p>Du hast folgende Rechte bezüglich deiner Daten:</p>
+    <ul>
+      <li><strong>Auskunft</strong> (Art. 15 DSGVO): Welche Daten wir über dich haben</li>
+      <li><strong>Berichtigung</strong> (Art. 16 DSGVO): Fehlerhafte Daten korrigieren</li>
+      <li><strong>Löschung</strong> (Art. 17 DSGVO): Konto und alle Firebase-Daten löschen</li>
+      <li><strong>Einschränkung</strong> (Art. 18 DSGVO): Verarbeitung einschränken</li>
+      <li><strong>Widerspruch</strong> (Art. 21 DSGVO): Der Verarbeitung widersprechen</li>
+      <li><strong>Beschwerde</strong>: Bei der zuständigen Aufsichtsbehörde (Landesbeauftragter für Datenschutz Baden-Württemberg)</li>
+    </ul>
+
+    <h2>7. Konto löschen</h2>
+    <p>Du kannst dein Konto jederzeit in der App unter <strong>Einstellungen → Konto löschen</strong> löschen. Alle Firebase-Daten werden dabei vollständig und unwiderruflich gelöscht. Lokale Daten auf deinem Gerät bleiben bestehen bis du die App deinstallierst.</p>
+    <p>Alternativ kannst du die Löschung per E-Mail anfragen: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+
+    <h2>8. Datensicherheit</h2>
+    <p>Alle Daten werden über verschlüsselte Verbindungen (HTTPS/TLS) übertragen. Firebase verwendet von Google betriebene Sicherheitsinfrastruktur. Lokale Aufnahmen sind im geschützten App-Dokumentenverzeichnis gespeichert.</p>
+
+    <h2>9. Minderjährige</h2>
+    <p>Die App richtet sich nicht gezielt an Kinder unter 13 Jahren. Wenn wir erfahren, dass Daten von Kindern unter 13 Jahren erfasst wurden, werden diese umgehend gelöscht.</p>
+
+    <h2>10. Kontakt</h2>
+    <div class="contact-card">
+      <p>Bei Fragen zum Datenschutz:</p>
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Deutschland</p>
+      <p>E-Mail: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════ ENGLISH ══ -->
+  <div class="lang-section" id="lang-en">
+
+    <div class="meta-info">
+      <strong>Last updated:</strong> June 2025 &nbsp;·&nbsp;
+      <strong>App:</strong> hira – Quran Memorisation &nbsp;·&nbsp;
+      <strong>Version:</strong> 1.0
+    </div>
+
+    <h2>1. Data Controller</h2>
+    <div class="contact-card">
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Germany</p>
+      <p>Email: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+    <h2>2. Data We Collect</h2>
+
+    <h3>2.1 Cloud Data (Firebase / Google)</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Storage</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebase UID</td><td>Firestore</td><td>User identification</td></tr>
+        <tr><td>Username</td><td>Firestore</td><td>Friends system, profile</td></tr>
+        <tr><td>Favourite Surah</td><td>Firestore</td><td>User profile</td></tr>
+        <tr><td>Favourite verse / quote</td><td>Firestore</td><td>User profile</td></tr>
+        <tr><td>Hafiz status</td><td>Firestore</td><td>User profile</td></tr>
+        <tr><td>Friend requests</td><td>Firestore</td><td>Friends system</td></tr>
+        <tr><td>Language preference</td><td>Firestore + local</td><td>App language</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Location Data</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Data</th><th>Recipient</th><th>Purpose</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>GPS coordinates</td><td>api.aladhan.com</td><td>Prayer times, Qibla direction</td></tr>
+        <tr><td>IP address (fallback)</td><td>ipapi.co</td><td>Location when GPS is disabled</td></tr>
+        <tr><td>Saved mosques</td><td>Local only (UserDefaults)</td><td>Prayer times for favourite mosque</td></tr>
+      </tbody>
+    </table>
+    <p>GPS coordinates are <strong>not stored permanently</strong>. They are sent only for the current calculation and then discarded.</p>
+
+    <h3>2.3 Microphone & Audio Recordings</h3>
+    <ul>
+      <li>Quran recitation recordings are stored <strong>locally only</strong> (Documents/{uid}/)</li>
+      <li>Not uploaded to any server</li>
+      <li>Sharing only through explicit user action (Share Sheet)</li>
+    </ul>
+
+    <h3>2.4 Notifications</h3>
+    <ul>
+      <li>Prayer time reminders (up to 60 local notifications)</li>
+      <li>Wudu reminder (5 min before prayer)</li>
+      <li>All local, no server communication</li>
+    </ul>
+
+    <h3>2.5 Locally Stored Data (UserDefaults)</h3>
+    <ul>
+      <li>Completed verses (learning progress)</li>
+      <li>Bookmarks (Surah, verse)</li>
+      <li>Prayer times cache</li>
+      <li>City name, prayer calculation method</li>
+    </ul>
+
+    <h2>3. Third-Party Services</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Privacy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Firebase (Google)</strong></td><td>Authentication, database</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td><strong>aladhan.com</strong></td><td>Prayer time calculation</td><td>Coordinates sent once per request</td></tr>
+        <tr><td><strong>ipapi.co</strong></td><td>IP-based location (fallback)</td><td>Only when GPS is disabled</td></tr>
+        <tr><td><strong>cdn.islamic.network</strong></td><td>Stream Quran audio</td><td>Anonymous, verse number only</td></tr>
+        <tr><td><strong>Apple CLGeocoder</strong></td><td>Address to coordinates</td><td>Processed by Apple</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Religious Data</h2>
+    <div class="highlight-box">
+      This app processes religious data (Hafiz status, favourite verses, recitations). This data constitutes a special category of personal data under Art. 9 GDPR. Processing is based solely on your explicit consent, which you grant during onboarding.
+    </div>
+
+    <h2>5. What We Do NOT Collect</h2>
+    <div class="not-collected">
+      ✓ No advertising IDs (IDFA / IDFV)<br>
+      ✓ No analytics tracking<br>
+      ✓ No email address<br>
+      ✓ No payment data<br>
+      ✓ No cross-app tracking
+    </div>
+
+    <h2>6. Your Rights (GDPR)</h2>
+    <p>You have the following rights regarding your data:</p>
+    <ul>
+      <li><strong>Access</strong> (Art. 15 GDPR): Know what data we hold about you</li>
+      <li><strong>Rectification</strong> (Art. 16 GDPR): Correct inaccurate data</li>
+      <li><strong>Erasure</strong> (Art. 17 GDPR): Delete your account and all Firebase data</li>
+      <li><strong>Restriction</strong> (Art. 18 GDPR): Restrict processing</li>
+      <li><strong>Objection</strong> (Art. 21 GDPR): Object to processing</li>
+      <li><strong>Complaint</strong>: With the supervisory authority in Baden-Württemberg, Germany</li>
+    </ul>
+
+    <h2>7. Account Deletion</h2>
+    <p>You can delete your account at any time in the app under <strong>Settings → Delete Account</strong>. All Firebase data will be permanently and irreversibly deleted. Local data on your device remains until you uninstall the app.</p>
+    <p>You can also request deletion by email: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+
+    <h2>8. Data Security</h2>
+    <p>All data is transmitted over encrypted connections (HTTPS/TLS). Firebase uses Google's security infrastructure. Local recordings are stored in the protected app documents directory.</p>
+
+    <h2>9. Children</h2>
+    <p>This app is not directed at children under 13. If we learn that data from children under 13 has been collected, it will be deleted immediately.</p>
+
+    <h2>10. Contact</h2>
+    <div class="contact-card">
+      <p>For privacy enquiries:</p>
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Germany</p>
+      <p>Email: <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+  </div>
+
+  <!-- ══════════════════════════════════════════ FRANÇAIS ══ -->
+  <div class="lang-section" id="lang-fr">
+
+    <div class="meta-info">
+      <strong>Mise à jour :</strong> Juin 2025 &nbsp;·&nbsp;
+      <strong>App :</strong> hira – Mémorisation du Coran &nbsp;·&nbsp;
+      <strong>Version :</strong> 1.0
+    </div>
+
+    <h2>1. Responsable du traitement</h2>
+    <div class="contact-card">
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Allemagne</p>
+      <p>E-mail : <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+    <h2>2. Données collectées</h2>
+
+    <h3>2.1 Données cloud (Firebase / Google)</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Données</th><th>Stockage</th><th>Finalité</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Firebase UID</td><td>Firestore</td><td>Identification de l'utilisateur</td></tr>
+        <tr><td>Nom d'utilisateur</td><td>Firestore</td><td>Système d'amis, profil</td></tr>
+        <tr><td>Sourate favorite</td><td>Firestore</td><td>Profil utilisateur</td></tr>
+        <tr><td>Verset / citation favori(te)</td><td>Firestore</td><td>Profil utilisateur</td></tr>
+        <tr><td>Statut Hafiz</td><td>Firestore</td><td>Profil utilisateur</td></tr>
+        <tr><td>Demandes d'amis</td><td>Firestore</td><td>Système d'amis</td></tr>
+        <tr><td>Préférence de langue</td><td>Firestore + local</td><td>Langue de l'app</td></tr>
+      </tbody>
+    </table>
+
+    <h3>2.2 Données de localisation</h3>
+    <table class="data-table">
+      <thead>
+        <tr><th>Données</th><th>Destinataire</th><th>Finalité</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Coordonnées GPS</td><td>api.aladhan.com</td><td>Horaires de prière, direction Qibla</td></tr>
+        <tr><td>Adresse IP (secours)</td><td>ipapi.co</td><td>Localisation si GPS désactivé</td></tr>
+        <tr><td>Mosquées sauvegardées</td><td>Local seulement</td><td>Horaires de prière de la mosquée favorite</td></tr>
+      </tbody>
+    </table>
+    <p>Les coordonnées GPS ne sont <strong>pas stockées de façon permanente</strong>. Elles sont transmises uniquement pour le calcul en cours, puis supprimées.</p>
+
+    <h3>2.3 Microphone et enregistrements audio</h3>
+    <ul>
+      <li>Les récitations du Coran sont stockées <strong>uniquement en local</strong> (Documents/{uid}/)</li>
+      <li>Aucun téléversement sur un serveur</li>
+      <li>Partage uniquement par action explicite de l'utilisateur (Share Sheet)</li>
+    </ul>
+
+    <h3>2.4 Notifications</h3>
+    <ul>
+      <li>Rappels des horaires de prière (jusqu'à 60 notifications locales)</li>
+      <li>Rappel wudu (5 min avant la prière)</li>
+      <li>Tout en local, aucune communication serveur</li>
+    </ul>
+
+    <h3>2.5 Données stockées localement (UserDefaults)</h3>
+    <ul>
+      <li>Versets complétés (progression d'apprentissage)</li>
+      <li>Favoris (Sourate, verset)</li>
+      <li>Cache des horaires de prière</li>
+      <li>Nom de ville, méthode de calcul des prières</li>
+    </ul>
+
+    <h2>3. Services tiers</h2>
+    <table class="data-table">
+      <thead>
+        <tr><th>Service</th><th>Finalité</th><th>Confidentialité</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>Firebase (Google)</strong></td><td>Authentification, base de données</td><td><a href="https://firebase.google.com/support/privacy" target="_blank">firebase.google.com/support/privacy</a></td></tr>
+        <tr><td><strong>aladhan.com</strong></td><td>Calcul des horaires de prière</td><td>Coordonnées transmises par requête</td></tr>
+        <tr><td><strong>ipapi.co</strong></td><td>Localisation par IP (secours)</td><td>Uniquement si GPS désactivé</td></tr>
+        <tr><td><strong>cdn.islamic.network</strong></td><td>Streaming audio du Coran</td><td>Anonyme, numéro de verset uniquement</td></tr>
+        <tr><td><strong>Apple CLGeocoder</strong></td><td>Adresse vers coordonnées</td><td>Traitement par Apple</td></tr>
+      </tbody>
+    </table>
+
+    <h2>4. Données religieuses</h2>
+    <div class="highlight-box">
+      Cette application traite des données religieuses (statut Hafiz, versets favoris, récitations). Ces données constituent une catégorie particulière de données personnelles au sens de l'Art. 9 du RGPD. Le traitement repose uniquement sur votre consentement explicite, donné lors de l'intégration.
+    </div>
+
+    <h2>5. Ce que nous ne collectons PAS</h2>
+    <div class="not-collected">
+      ✓ Aucun identifiant publicitaire (IDFA / IDFV)<br>
+      ✓ Aucun suivi analytique<br>
+      ✓ Aucune adresse e-mail<br>
+      ✓ Aucune donnée de paiement<br>
+      ✓ Aucun suivi entre applications
+    </div>
+
+    <h2>6. Vos droits (RGPD)</h2>
+    <p>Vous disposez des droits suivants concernant vos données :</p>
+    <ul>
+      <li><strong>Accès</strong> (Art. 15 RGPD) : Savoir quelles données nous détenons sur vous</li>
+      <li><strong>Rectification</strong> (Art. 16 RGPD) : Corriger des données inexactes</li>
+      <li><strong>Suppression</strong> (Art. 17 RGPD) : Supprimer votre compte et toutes les données Firebase</li>
+      <li><strong>Limitation</strong> (Art. 18 RGPD) : Restreindre le traitement</li>
+      <li><strong>Opposition</strong> (Art. 21 RGPD) : S'opposer au traitement</li>
+      <li><strong>Réclamation</strong> : Auprès de l'autorité de contrôle compétente (Bade-Wurtemberg, Allemagne)</li>
+    </ul>
+
+    <h2>7. Suppression du compte</h2>
+    <p>Vous pouvez supprimer votre compte à tout moment dans l'application via <strong>Paramètres → Supprimer le compte</strong>. Toutes les données Firebase seront définitivement supprimées. Les données locales sur votre appareil restent jusqu'à la désinstallation de l'app.</p>
+    <p>Vous pouvez également demander la suppression par e-mail : <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+
+    <h2>8. Sécurité des données</h2>
+    <p>Toutes les données sont transmises via des connexions chiffrées (HTTPS/TLS). Firebase utilise l'infrastructure de sécurité de Google. Les enregistrements locaux sont stockés dans le répertoire de documents protégé de l'application.</p>
+
+    <h2>9. Mineurs</h2>
+    <p>Cette application ne s'adresse pas spécifiquement aux enfants de moins de 13 ans. Si nous apprenons que des données d'enfants de moins de 13 ans ont été collectées, elles seront supprimées immédiatement.</p>
+
+    <h2>10. Contact</h2>
+    <div class="contact-card">
+      <p>Pour toute question relative à la confidentialité :</p>
+      <p><strong>Ramiz Rexhepi</strong></p>
+      <p>Eckstraße 5, 89250 Senden, Allemagne</p>
+      <p>E-mail : <a href="mailto:hira.teamsupport@gmail.com">hira.teamsupport@gmail.com</a></p>
+    </div>
+
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  <span class="app-name-footer">hira</span>
+  بِسْمِ اللَّهِ الرَّحْمَٰنِ الرَّحِيمِ
+  <br><br>
+  © 2025 Ramiz Rexhepi · hira.teamsupport@gmail.com
+</footer>
+
+<script>
+  function setLang(lang) {
+    document.querySelectorAll('.lang-section').forEach(el => el.classList.remove('active'));
+    document.querySelectorAll('.lang-tab').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('active');
+    event.target.classList.add('active');
+    document.documentElement.lang = lang;
+  }
+</script>
+
+</body>
+</html>
